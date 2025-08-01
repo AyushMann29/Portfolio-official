@@ -89,7 +89,7 @@ const About: React.FC = () => {
       {/* Feedback Form Link */}
       <div className="flex justify-center mb-8">
         <a
-          href="https://forms.gle/YOUR_FORM_ID_HERE"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdm90BKhQ0I8cACFvGL9HmHZw7pND6Z_lalR2wxMaI3HLuE0w/viewform?usp=dialog"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-blue-600 text-white font-semibold text-base hover:bg-blue-700 transition-colors shadow"
