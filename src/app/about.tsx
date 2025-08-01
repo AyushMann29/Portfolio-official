@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { FaDownload, FaEnvelope, FaComments } from "react-icons/fa";
 
 // Profile image should be placed in public/profile.jpg
@@ -27,9 +28,11 @@ const About: React.FC = () => {
     >
       {/* Profile Image */}
       <div className="mb-8">
-        <img
+        <Image
           src={profileImage}
           alt="Profile portrait of Ayush Mann"
+          width={128}
+          height={128}
           className="w-32 h-32 rounded-full object-cover border-4 border-neutral-200 dark:border-neutral-800 shadow-lg"
         />
       </div>
@@ -47,7 +50,7 @@ const About: React.FC = () => {
 
       {/* Detailed About Paragraph */}
       <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-8 text-center max-w-2xl">
-        I'm a passionate full-stack developer focused on crafting performant, accessible, and visually engaging web applications. With a background in computer science and a love for clean, maintainable code, I thrive on solving complex problems and bringing ideas to life. My work blends thoughtful design with robust engineering, and I'm always eager to learn new technologies and collaborate with creative teams. When I'm not coding, you'll find me exploring new music, hiking, or experimenting with generative art.
+        I&apos;m a passionate full-stack developer focused on crafting performant, accessible, and visually engaging web applications. With a background in computer science and a love for clean, maintainable code, I thrive on solving complex problems and bringing ideas to life. My work blends thoughtful design with robust engineering, and I&apos;m always eager to learn new technologies and collaborate with creative teams. When I&apos;m not coding, you&apos;ll find me exploring new music, hiking, or experimenting with generative art.
       </p>
 
       {/* Skills/Technologies as Badges */}
@@ -99,7 +102,7 @@ const About: React.FC = () => {
 
       {/* Fun Fact / Quote */}
       <blockquote className="italic text-neutral-500 dark:text-neutral-400 text-center max-w-xl mx-auto">
-        "Code is poetry. Design is intelligence made visible."
+        &ldquo;Code is poetry. Design is intelligence made visible.&rdquo;
       </blockquote>
     </section>
   );
